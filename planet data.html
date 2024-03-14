@@ -1,154 +1,173 @@
 <!DOCTYPE html>
 <html lang="en-US">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
     <title>Table template</title>
-    <link href="minimal-table.css" rel="stylesheet" type="text/css">
-    
+    <link href="minimal-table.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
     <header>
-    <h1>Planet data</h1>
+      <h1>Planet data</h1>
     </header>
     <main>
-    <table>
-        <caption>Data about the planets of our solar system (Planetary facts taken from <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/">Nasa's planetary Fact Sheet-Metric</a>)
+      <table>
+        <caption>
+          Data about the planets of our solar system (Planetary facts taken from
+          <a href="https://nssdc.gsfc.nasa.gov/planetary/factsheet/"
+            >Nasa's planetary Fact Sheet-Metric</a
+          >)
         </caption>
         <colgroup>
-            <col span="2">
-            <col style="border: 2px solid black">
-            <col span="9">
+          <col span="2" />
+          <col class="border" />
+          <col span="9" />
         </colgroup>
-        <tr>
-            <td colspan="2">&nbsp;</td>
-            <th scope="col">Name</th>
-            <th scope="col">Mass (10<sup>24</sup>kg)</th>
-            <th scope="col">Diameter (km)</th>
-            <th scope="col">Density (kg/ms)<sup>2</sup>)</th>
-            <th scope="col">Gravity (m/s<sup>2</sup>)</th>
-            <th scope="col">Length of day (hours)</th>
-            <th scope="col">Distance from Sun (10<sup>6</sup>km)</th>
-            <th scope="col">Mean temperature (°C)</th>
-            <th scope="col">Number of moons</th>
-            <th scope="col">Notes</th>
-        </tr>
-        <tr>
-            <th rowspan="4" colspan="2" scope="rowgroup">Terrestrial planets</th>
-            <th scope="row">Mercury</th>
-            <td>0.330</td>
-            <td>4,879</td>
-            <td>5427</td>
-            <td>3.7</td>
-            <td>4222.6</td>
-            <td>57.9</td>
-            <td>167</td>
-            <td>0</td>
-            <td>Closest to the Sun</td>
-        </tr>
-        <tr>
-            <th scope="row">Venus</th>
-            <td>4.87 </td>
-            <td>12,104 </td>
-            <td>5243 </td>
-            <td>8.9 </td>
-            <td>2802.0 </td>
-            <td>108.2 </td>
-            <td>464 </td>
-            <td>0</td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="row">Earth</th>
-            <td>5.97</td>
-            <td>12,756 </td>
-            <td>5514 </td>
-            <td>9.8 </td>
-            <td>24.0 </td>
-            <td>149.6 </td>
-            <td>15 </td>
-            <td>1 </td>
-            <td>Our world</td>
-        </tr>
-        <tr>
-            <th scope="row">Mars</th>
-            <td>0.642 </td>
-            <td>6,792</td>
-            <td> 3933 </td>
-            <td>3.7 </td>
-            <td>24.7 </td>
-            <td>227.9 </td>
-            <td>-65</td>
-            <td> 2 </td>
-            <td>The red planet</td>
-        </tr>
-        <tr>
-            <th rowspan="4" id="jovian">Jovian planets</th>
-            <th rowspan="2" id="gas-giants" headers="jovian">Gas giants</th>
-            <th id="jupiter" headers="gas-giants">Jupiter</th>
-            <td>1898 </td>
-            <td>142,984 </td>
-            <td>1326 </td>
-            <td>23.1 </td>
-            <td>9.9 </td>
-            <td>778.6 </td>
-            <td>-110 </td>
-            <td>67 </td>
-            <td>The largest planet</td>
-        </tr>
-        <tr>
-            <th id="saturn" headers="gas-giants">Saturn</th>
-            <td>568 </td>
-            <td>120,536 </td>
-            <td>687 </td>
-            <td>9.0 </td>
-            <td>10.7 </td>
-            <td>1433.5 </td>
-            <td>-140 </td>
-            <td>62</td>
-            <td></td>
-        </tr>
-        <tr>
-            <th id="ice-giants" rowspan="2">Ice giants</th>
-            <th id="uranus" headers="ice-giants">Uranus</th>
-            <td>86.8 </td>
-            <td>51,118 </td>
-            <td>1271 </td>
-            <td>8.7 </td>
-            <td>17.2 </td>
-            <td>2872.5 </td>
-            <td>-195 </td>
-            <td>27</td>
-            <td></td>
-        </tr>
-        <tr>
-            <th id="neptune" headers="ice-giants">Neptune</th>
-            <td>102 </td>
-            <td>49,528 </td>
-            <td>1638 </td>
-            <td>11.0 </td>
-            <td>16.1 </td>
-            <td>4495.1 </td>
-            <td>-200 </td>
-            <td>14</td>
-            <td></td>
-        </tr>
-        <tr>
-            <th scope="rowgroup" colspan="2">Dwarf planets</th>
-            <th scope="row">Pluto</th>
-            <td>0.0146</td>
-            <td>2,370 </td>
-            <td>2095 </td>
-            <td>0.7 </td>
-            <td>153.3 </td>
-            <td>5906.4 </td>
-            <td>-225 </td>
-            <td>5 </td>
-            <td>Declassified as a planet in 2006, but this <a href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/">remains controversial</a></td>
-        </tr>
-
-    </table>
-
+        <thead>
+          <tr>
+            <td class="topfix" colspan="2">&nbsp;</td>
+            <th class="topfix leftfix index" scope="col">Name</th>
+            <th class="topfix" scope="col">Mass (10<sup>24</sup>kg)</th>
+            <th class="topfix" scope="col">Diameter (km)</th>
+            <th class="topfix" scope="col">Density (kg/ms)<sup>2</sup>)</th>
+            <th class="topfix" scope="col">Gravity (m/s<sup>2</sup>)</th>
+            <th class="topfix" scope="col">Length of day (hours)</th>
+            <th class="topfix" scope="col">
+              Distance from Sun (10<sup>6</sup>km)
+            </th>
+            <th class="topfix" scope="col">Mean temperature (°C)</th>
+            <th class="topfix" scope="col">Number of moons</th>
+            <th class="topfix" scope="col">Notes</th>
+          </tr>
+        </thead>
+        <tbody>
+          <div class="container">
+            <tr>
+              <th rowspan="4" colspan="2" scope="rowgroup">
+                Terrestrial planets
+              </th>
+              <th class="leftfix" scope="row">Mercury</th>
+              <td data-cel="Mass (10²⁴ kg)">0.330</td>
+              <td data-cel="Diameter (km)">4,879</td>
+              <td data-cel="Density (kg/m⁻³)">5427</td>
+              <td data-cel="Gravity (m/s²)">3.7</td>
+              <td data-cel="Length of day (hours)">4222.6</td>
+              <td data-cel="Distance from Sun (10⁶ km)">57.9</td>
+              <td data-cel="Mean temperature (°C)">167</td>
+              <td data-cel="Number of moons">0</td>
+              <td data-cel="Notes">Closest to the Sun</td>
+            </tr>
+            <tr>
+              <th class="leftfix" scope="row">Venus</th>
+              <td data-cel="Mass (10²⁴ kg)">4.87</td>
+              <td data-cel="Diameter (km)">12,104</td>
+              <td data-cel="Density (kg/m⁻³)">5243</td>
+              <td data-cel="Gravity (m/s²)">8.9</td>
+              <td data-cel="Length of day (hours)">2802.0</td>
+              <td data-cel="Distance from Sun (10⁶ km)">108.2</td>
+              <td data-cel="Mean temperature (°C)">464</td>
+              <td data-cel="Number of moons">0</td>
+              <td data-cel="Notes"></td>
+            </tr>
+            <tr>
+              <th class="leftfix" scope="row">Earth</th>
+              <td data-cel="Mass (10²⁴ kg)">5.97</td>
+              <td data-cel="Diameter (km)">12,756</td>
+              <td data-cel="Density (kg/m⁻³)">5514</td>
+              <td data-cel="Gravity (m/s²)">9.8</td>
+              <td data-cel="Length of day (hours)">24.0</td>
+              <td data-cel="Distance from Sun (10⁶ km)">149.6</td>
+              <td data-cel="Mean temperature (°C)">15</td>
+              <td data-cel="Number of moons">1</td>
+              <td data-cel="Notes">Our world</td>
+            </tr>
+            <tr>
+              <th class="leftfix" scope="row">Mars</th>
+              <td data-cel="Mass (10²⁴ kg)">0.642</td>
+              <td data-cel="Diameter (km)">6,792</td>
+              <td data-cel="Density (kg/m⁻³)">3933</td>
+              <td data-cel="Gravity (m/s²)">3.7</td>
+              <td data-cel="Length of day (hours)">24.7</td>
+              <td data-cel="Distance from Sun (10⁶ km)">227.9</td>
+              <td data-cel="Mean temperature (°C)">-65</td>
+              <td data-cel="Number of moons">2</td>
+              <td data-cel="Notes">The red planet</td>
+            </tr>
+            <tr>
+              <th class="fix" rowspan="4" id="jovian">Jovian planets</th>
+              <th class="fix" rowspan="2" id="gas-giants" headers="jovian">
+                Gas giants
+              </th>
+              <th class="leftfix" id="jupiter" headers="gas-giants">Jupiter</th>
+              <td data-cel="Mass (10²⁴ kg)">1898</td>
+              <td data-cel="Diameter (km)">142,984</td>
+              <td data-cel="Density (kg/m⁻³)">1326</td>
+              <td data-cel="Gravity (m/s²)">23.1</td>
+              <td data-cel="Length of day (hours)">9.9</td>
+              <td data-cel="Distance from Sun (10⁶ km)">778.6</td>
+              <td data-cel="Mean temperature (°C)">-110</td>
+              <td data-cel="Number of moons">67</td>
+              <td data-cel="Notes">The largest planet</td>
+            </tr>
+            <tr>
+              <th class="leftfix" id="saturn" headers="gas-giants">Saturn</th>
+              <td data-cel="Mass (10²⁴ kg)">568</td>
+              <td data-cel="Diameter (km)">120,536</td>
+              <td data-cel="Density (kg/m⁻³)">687</td>
+              <td data-cel="Gravity (m/s²)">9.0</td>
+              <td data-cel="Length of day (hours)">10.7</td>
+              <td data-cel="Distance from Sun (10⁶ km)">1433.5</td>
+              <td data-cel="Mean temperature (°C)">-140</td>
+              <td data-cel="Number of moons">62</td>
+              <td data-cel="Notes"></td>
+            </tr>
+            <tr>
+              <th class="fix" id="ice-giants" rowspan="2">Ice giants</th>
+              <th class="leftfix" id="uranus" headers="ice-giants">Uranus</th>
+              <td data-cel="Mass (10²⁴ kg)">86.8</td>
+              <td data-cel="Diameter (km)">51,118</td>
+              <td data-cel="Density (kg/m⁻³)">1271</td>
+              <td data-cel="Gravity (m/s²)">8.7</td>
+              <td data-cel="Length of day (hours)">17.2</td>
+              <td data-cel="Distance from Sun (10⁶ km)">2872.5</td>
+              <td data-cel="Mean temperature (°C)">-195</td>
+              <td data-cel="Number of moons">27</td>
+              <td data-cel=""></td>
+            </tr>
+            <tr>
+              <th class="leftfix" id="neptune" headers="ice-giants">Neptune</th>
+              <td data-cel="Mass (10²⁴ kg)">102</td>
+              <td data-cel="Diameter (km)">49,528</td>
+              <td data-cel="Density (kg/m⁻³)">1638</td>
+              <td data-cel="Gravity (m/s²)">11.0</td>
+              <td data-cel="Length of day (hours)">16.1</td>
+              <td data-cel="Distance from Sun (10⁶ km)">4495.1</td>
+              <td data-cel="Mean temperature (°C)">-200</td>
+              <td data-cel="Number of moons">14</td>
+              <td data-cel=""></td>
+            </tr>
+            <tr>
+              <th class="fix" scope="rowgroup" colspan="2">Dwarf planets</th>
+              <th class="leftfix" scope="row">Pluto</th>
+              <td data-cel="Mass (10²⁴ kg)">0.0146</td>
+              <td data-cel="Diameter (km)">2,370</td>
+              <td data-cel="Density (kg/m⁻³)">2095</td>
+              <td data-cel="Gravity (m/s²)">0.7</td>
+              <td data-cel="Length of day (hours)">153.3</td>
+              <td data-cel="Distance from Sun (10⁶ km)">5906.4</td>
+              <td data-cel="Mean temperature (°C)">-225</td>
+              <td data-cel="Number of moons">5</td>
+              <td data-cel="">
+                Declassified as a planet in 2006, but this
+                <a
+                  href="http://www.usatoday.com/story/tech/2014/10/02/pluto-planet-solar-system/16578959/"
+                  >remains controversial</a
+                >
+              </td>
+            </tr>
+          </div>
+        </tbody>
+      </table>
     </main>
   </body>
 </html>
